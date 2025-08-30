@@ -70,7 +70,17 @@ if (isset($_POST['entrar'])) {
         border-radius: 5px;
     }
 
+    .login button {
+        width: 100%;
+        padding: 10px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-
-   
+    .login button:hover {
+        background: #0056b3;
+    }
 </style>
