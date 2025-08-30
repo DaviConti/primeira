@@ -1,10 +1,9 @@
 <?php
 session_start();
-include 'db.php'; 
 
 if (isset($_POST['entrar'])) {
     $email = $_POST['email'];
-    $senha = md5($_POST['senha']); 
+    $senha = md5($_POST['senha']);
 
     $sql = "SELECT * FROM usuarios WHERE email='$email' AND senha='$senha'";
     $result = $conn->query($sql);
@@ -20,12 +19,34 @@ if (isset($_POST['entrar'])) {
 ?>
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
+    <form method="POST" class="login">
+        <h2>Bem Vindo</h2>
+        <input type="email" name="email" placeholder="E-Mail" required>
+        <input type="password" name="senha" placeholder="Senha" required>
+        <button type="submit" name="entrar">ENTRAR</button>
+    </form>
+
 </body>
+
 </html>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+</style>
