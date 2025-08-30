@@ -49,4 +49,13 @@ if (isset($_POST['entrar'])) {
         height: 100vh;
     }
 
+    .login {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px gray;
+        text-align: center;
+        width: 300px;
+    }
+
 </style>
