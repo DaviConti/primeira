@@ -62,4 +62,15 @@ if (isset($_POST['entrar'])) {
         margin-bottom: 20px;
     }
 
+    .login input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+
+
+
+   
 </style>
