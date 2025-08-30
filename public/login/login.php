@@ -58,4 +58,8 @@ if (isset($_POST['entrar'])) {
         width: 300px;
     }
 
+    .login h2 {
+        margin-bottom: 20px;
+    }
+
 </style>
